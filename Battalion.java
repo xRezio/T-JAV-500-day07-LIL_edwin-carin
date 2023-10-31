@@ -8,7 +8,7 @@ public class Battalion<T extends Character> {
         this.characters = new ArrayList<>();
     }
 
-    public void add(List<T> newCharacters) {
+    public void add(List<? extends T> newCharacters) {
         characters.addAll(newCharacters);
     }
 
